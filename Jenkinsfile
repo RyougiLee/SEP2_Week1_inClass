@@ -44,9 +44,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                script {
-                    docker.build("${env.DOCKERHUB_REPO}:${env.DOCKER_IMAGE_TAG}")
-                }
+                bat "docker build -t ${env.DOCKERHUB_REPO}:${env.DOCKER_IMAGE_TAG} ."
             }
         }
         stage('Push Docker Image to Docker Hub') {
