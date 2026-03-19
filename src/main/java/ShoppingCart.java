@@ -53,4 +53,9 @@ public class ShoppingCart {
         System.out.println(messages.getString("totalCost") + totalValue);
         return totalValue;
     }
+
+    public static void main(String[] args) {
+        ShoppingCart cart = new ShoppingCart();
+        cart.run();
+    }
 }
