@@ -63,7 +63,7 @@
                     <archive>
                         <manifest>
                             <!-- Specify the fully qualified Main class -->
-                            <mainClass>LocalizedGreeting</mainClass>
+                            <mainClass>ShoppingCart</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
