@@ -2,6 +2,7 @@ pipeline {
     agent any
     tools{
     maven 'Maven3'
+    jdk 'JDK21'
     }
     environment {
         PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
